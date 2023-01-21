@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #171717;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    display: none;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 35px;
+}
+
+/* Menu Animation*/
+#menu-icon {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+#menu-icon.fa-xmark {
+    color: red;
+    transform: rotate(180deg);
+}
+
+#menu-icon.fa-xmark ~ header {
+    border-bottom: 2px solid white;
+}
+
+.bar.show ~ .alles {
+    display: none;
+}
+
+.bar {
+    display: none;
+}
+
+.bar a {
+    text-decoration: none;
+}
+
+.bar.show {
+    display: initial;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.alles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dbd8d3;
+}
+
+.logo img {
+    display: flex;
+    width: 250px;
+}
+
+.yourname {
+    font-weight: 700;
+}
+
+.yourdescription {
+    width: 25%;
+    padding: 0px 0px 16px;
+    color: white;
+}
+
+.shareable {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.shareable button:after ~ .social-button {
+    display: none;
+}
+
+.shareable button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.share-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    display: flex;
+    background: #171717;
+}
+
+.share-qr-code {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.share-qr-code img {
+    width: 100%;
+    height: 45%;
+}
+
+.share-close {
+    position: absolute;
+    right: 36%;
+    top: 22%;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.share-close:hover {
+    cursor: pointer;
+    color: #FF0000;
+}
+
+#id01 {
+    display: none;
+}
+
+.shareable button {
+    padding: 10px;
+    border: 1px solid #2C3032;
+    border-radius: 16px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: 0.5s;
+    margin: 0px 5px 27px;
+    background: #1c1e1f;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 27%;
+    justify-content: center;
+}
+
+.social-button button {
+    border: none;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 8px 8px;
+    color: white;
+    border-radius: 15px;
+}
+
+.social-button button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Button Farben */
+
+.tw button{
+    background: #1DA1F2;
+}
+
+.sn button {
+    background: #fffc00;
+    color: white;
+}
+
+.yt button {
+    background: #FF0000;
+}
+
+.ig button {
+    Background: -Webkit-Radial-Gradient(32% 106%, Circle Cover, Rgb(255, 225, 125) 0%, Rgb(255, 205, 105) 10%, Rgb(250, 145, 55) 28%, Rgb(235, 65, 65) 42%, Transparent 82%), -Webkit-Linear-Gradient(-45deg, Rgb(35, 75, 215) 12%, Rgb(195, 60, 190) 58%);
+    Background: -Moz-Radial-Gradient(32% 106%, Circle Cover, Rgb(255, 225, 125) 0%, Rgb(255, 205, 105) 10%, Rgb(250, 145, 55) 28%, Rgb(235, 65, 65) 42%, Transparent 82%), -Moz-Linear-Gradient(-45deg, Rgb(35, 75, 215) 12%, Rgb(195, 60, 190) 58%);
+    Background: -Ms-Radial-Gradient(32% 106%, Circle Cover, Rgb(255, 225, 125) 0%, Rgb(255, 205, 105) 10%, Rgb(250, 145, 55) 28%, Rgb(235, 65, 65) 42%, Transparent 82%), -Ms-Linear-Gradient(-45deg, Rgb(35, 75, 215) 12%, Rgb(195, 60, 190) 58%);
+    Background: -O-Radial-Gradient(32% 106%, Circle Cover, Rgb(255, 225, 125) 0%, Rgb(255, 205, 105) 10%, Rgb(250, 145, 55) 28%, Rgb(235, 65, 65) 42%, Transparent 82%), -O-Linear-Gradient(-45deg, Rgb(35, 75, 215) 12%, Rgb(195, 60, 190) 58%);
+    Background: Radial-Gradient(Circle Farthest-Corner At 32% 106%, Rgb(255, 225, 125) 0%, Rgb(255, 205, 105) 10%, Rgb(250, 145, 55) 28%, Rgb(235, 65, 65) 42%, Transparent 82%), Linear-Gradient(135deg, Rgb(35, 75, 215) 12%, Rgb(195, 60, 190) 58%);
+}
+
+.sp button {
+    background: #1DB954;
+}
+
+.st button {
+    background: #383737;
+}
+
+.gh button {
+    background: #969696;
+}
+
+.em button {
+    background: #0f53b2;
+}
+
+.fa-snapchat {
+    text-shadow: 2px 1px 1px black;
+}
+
+footer {
+    border-top: 2px solid #fff;
+    font-size: 18px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.imprint-co a:hover {
+    color: #068b8a;
+}
+
+/* Impressum */
+.impressum-card {
+    text-align: center;
+    color: white;
+}
+
+.back {
+    display: none;
+}
+
+.impressum-card a {
+    text-decoration: none;
+    color: white;
+}
+
+.impressum-card a:hover {
+    color: #1DA1F2;
+}
+
+.impressum-card h1,
+.impressum-card h2,
+.impressum-card h3 {
+    text-align: center;
+}
+
+.impressum-card h2,
+.impressum-card h3 {
+    text-decoration: underline;
+}
+
+
+/* Handy */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 20px;
+        height: 10px;
+    }
+    .yourdescription {
+        width: 80%;
+    }
+    .social-media {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .bar-infos {
+        display: flex;
+        align-items: center;
+    }
+    .bar-infos a{
+        color: white;
+    }
+    .bar-link-i {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .bar-link-d {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .bar-copyright {
+        color: white;
+        font-weight: 700;
+    }
+    .share-close {
+        right: 47%;
+    }
+    footer {
+        display: none;
+    }
+    .back {
+        position: fixed;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: dodgerblue;
+        right: 20px;
+        top: 20px;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+/* Ipad */
+@media only screen and (min-width: 768px) and (max-width: 64em) {
+    .yourdescription {
+        width: 54%;
+    }
+    .social-media {
+        width: 50%;
+    }
+    main {
+        width: 100%;
+        min-height: 900px;
+    }
+    .share-close {
+        right: 12%;
+    }
+}
+
+/* Laptop S */
+@media only screen and (min-width: 1024px) and (max-width: 1160px) {
+    .yourdescription {
+        width: 37%;
+    }
+    .social-media {
+        width: 40%;
+    }
+    footer {
+        position: unset;
+    }
+}
+
+/* Laptop L */
+@media only screen and (min-width: 1440px) {
+    .yourdescription {
+        width: 29%;
+    }
+    .social-media {
+        width: 25%;
+        margin: 0 0 20px;
+    }
+}
+
+/* 4K */
+@media only screen and (min-width: 2160px) and (max-width: 3840px) {
+    .logo img {
+        width: 30rem;
+    }
+    .yourname {
+        font-size: 2rem;
+    }
+    .yourdescription {
+        width: 42%;
+        font-size: 3rem;
+    }
+    .shareable button {
+        font-size: 3rem;
+        margin: 18px 28px 35px;
+    }
+    .share-popup {
+        min-height: 2000px;
+    }
+    .social-media {
+        width: 33%;
+    }
+    .social-button button {
+        width: 200px;
+        height: 200px;
+    }
+    .social-media i {
+        font-size: 5rem;
+    }
+    footer {
+        font-size: 40px;
+    }
+}

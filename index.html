@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a193c7a199.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Ishak | Digital Business Card</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="menu-icon" class="fa-solid fa-bars"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="bar" id="bar">
+            <div class="bar-infos">
+                <div class="bar-link-i">
+                    <a href="./assets/sites/impressum/index.html">impressum</a>
+                </div>
+                <div class="bar-link-d">
+                    <a href="">Datenschutzerklärung</a>
+                </div>
+            </div>
+            <div class="bar-copyright">
+                <p>©2022 | Ishak Ugurlu</p>
+            </div>
+        </div>
+        
+        <div class="alles">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="Logo">
+            </div>
+            
+            <div class="yourname">
+                <h2>Ishak Ugurlu</h2>
+            </div>
+
+            <div class="yourdescription">
+                <span>Hey, Ich heiße Ishak und mache in meiner Freizeit
+                    etwas mit Netzwerk, Server, Entwicklung und Schulprojekten.
+                    Falls ich deine Interesse geweckt habe schreibe mir oder 
+                    schaue dich hier um.
+                </span>
+            </div>
+
+            <div class="shareable">
+                <button onclick="document.getElementById('id01').style.display='flex'"><i class="fa-sharp fa-solid fa-qrcode"></i> QR-Code</button>
+                <button id="share-button"><i class="fa-solid fa-arrow-up-from-bracket"></i> Profil Teilen</button>
+            </div>
+            <div class="share-popup" id="id01">
+                <div class="share-close">
+                    <span onclick="document.getElementById('id01').style.display='none'"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div class="share-qr-code">
+                    <img src="./assets/img/qr-code/qr-code-white.png" alt="link.ugurlu.de">
+                </div>
+            </div>
+
+            <div class="social-media">
+                <div class="social-button ig">
+                    <a href="https://www.instagram.com/ishak2001/" target="_blank"><button class="insta"><i class="fa-brands fa-instagram"></i></button></a>
+                </div>
+                
+                <div class="social-button sp">
+                    <a href="https://open.spotify.com/user/uz8fzuiciny0qlwtcng5krvcg" target="_blank"><button class="spotify"><i class="fa-brands fa-spotify"></i></button></a>
+                </div>
+
+                <div class="social-button tw">
+                    <a href="https://twitter.com/__DerKaiser" target="_blank"><button class="twitter"><i class="fa-brands fa-twitter"></i></button></a>
+                </div>
+
+                <div class="social-button yt">
+                    <a href="https://www.youtube.com/@__DerKaiser/" target="_blank"><button class="youtube"><i class="fa-brands fa-youtube"></i></button></a>
+                </div>
+
+                <div class="social-button gh">
+                    <a href="https://github.com/ishak2001" target="_blank"><button class="Github"><i class="fa-brands fa-github"></i></button></a>
+                </div>
+
+                <div class="social-button em">
+                    <a href="mailto:info@ugurlu.de" target="_blank"><button class="E-Mail"><i class="fa-solid fa-envelope"></i></button></a>
+                </div>
+
+                <div class="social-button st">
+                    <a href="https://steamcommunity.com/id/DerKaiser___/" target="_blank"><button class="Steam"><i class="fa-brands fa-steam"></i></button></a>
+                </div>
+
+                <div class="social-button sn">
+                    <a href="https://snapchat.com/add/ishak2001" target="_blank"><button class="Steam"><i class="fa-brands fa-snapchat"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>©2022 | Ishak Ugurlu</p>
+            </div>
+
+            <div class="imprint-co">
+                <a href="./assets/sites/impressum/index.html">impressum</a>
+                <a href="./assets/sites/datenschutzerklärung/index.html">Datenschutzerklärung</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/share.js"></script>
+    <script src="./assets/js/h-menu.js"></script>
+</body>
+</html>
